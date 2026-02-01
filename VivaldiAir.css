@@ -1,10 +1,11 @@
+
 :root {
     --space: 5px;
     /*space between different panels, eg. tabs, bookmark bar etc. */
     --borderColor: rgba(255,255,255, 0.2);
     /*color of borders*/
-    --shadowColor: rgba(0,0,0,0.2);
-    --glassTintColorLight: rgba(255, 255, 255, 0.2);
+    --shadowColor: rgba(0,0,0,0.2); 
+    --glassTintColorLight: rgba(255, 255, 255, 0.2); 
     --glassTintColorDark: rgba(70, 70, 70, 0.1);
     --bgColor: rgba(0, 0, 0, 0.05);
     --bgDark: rgba(0, 0, 0, 0.2);
@@ -318,6 +319,7 @@ footer#footer {
 
 footer .toolbar-statusbar {
     margin: 0 5px 5px 5px;
+    border-radius: var(--radius);
 }
 
 .inner > .StatusInfo > .StatusInfo-Content {
@@ -1010,7 +1012,9 @@ div#panels-container {
     overflow: hidden;
 }
 
-/*usable transparency slider */
+
+
+/*better transparency slider */
 
 /* Set the transparency value for the slider when it is at its maximum value (the 25% mark) */
 /* Must be between 0 (for fully opaque) and 100 (for fully transparent) */
