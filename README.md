@@ -22,4 +22,8 @@ Configuration steps:
   4) Open Vivaldi Settings
   5) Appearance > CUSTOM UI MODIFICATIONS and select the folder in which you downloaded the CSS.
   6) Appearance > Status Bar > Hide Status Bar
-  7) Themes > New Theme... and follow the screenshots below:
+  7) Themes > Editor > Colors > Accent from page: Off, Accent on window: On
+  8) Themes > Editor > Settings > Transparent tab bar: On
+
+Hopefully 7 & 8 wont be required in the future.
+     
