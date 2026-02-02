@@ -30,7 +30,6 @@
 #browser.win select,
 #browser.win textarea {
   font-family: monospace;
-  if; */
 }
 
 /*================================
@@ -52,6 +51,7 @@ footer .toolbar-statusbar, /*STATUS BAR*/
 {
     background-color: var(--bgColor) !important;
     backdrop-filter: var(--backgroundBlur) !important;
+  
     box-shadow: 
         inset 0px 2px 2px -1px var(--glassTintColorLight),
         inset 0 -2px 2px -1px var(--glassTintColorLight),
@@ -200,13 +200,15 @@ input[type=button]:not(.circular),
 }
 
 #panels-container.left {
+    margin-top: var(--space);
     margin-left: var(--space);
     margin-bottom: var(--space);
-    margin: var(--space) 0 var(--space) var(--space);
 }
 
 #panels-container.right {
-    margin-right: 5px;
+    margin-right: var(--space);
+    margin-top: var(--space);
+    margin-bottom: var(--space);
 }
 
 #panels-container #switch {
@@ -221,6 +223,7 @@ input[type=button]:not(.circular),
     margin-left: 0;
     margin-right: 0;
     overflow: hidden;
+    border: none !important;
 }
 
 /* doesnt disappear on collapse transition */
@@ -318,6 +321,7 @@ footer#footer {
 
 footer .toolbar-statusbar {
     margin: 0 5px 5px 5px;
+    border-radius: var(--radius);
 }
 
 .inner > .StatusInfo > .StatusInfo-Content {
@@ -635,7 +639,6 @@ footer .toolbar-statusbar {
     padding-top: var(--startpageNavPaddingOnTop);
     padding-bottom: calc(var(--startpageNavPaddingOnBottom) - 2px);
     min-height: unset;
-    margin-right: var(--space);
     display: flex;
     justify-content: center;
     border-radius: var(--radius);
@@ -875,8 +878,6 @@ button.button-startpage:after {
     backdrop-filter: none;
 }
 
-div#panels-container {
-}
 
 /* Collapse header/titlebar completely when tabs are hidden
    BUT keep it in popup/settings windows */
@@ -1010,7 +1011,9 @@ div#panels-container {
     overflow: hidden;
 }
 
-/*usable transparency slider */
+
+
+/*better transparency slider */
 
 /* Set the transparency value for the slider when it is at its maximum value (the 25% mark) */
 /* Must be between 0 (for fully opaque) and 100 (for fully transparent) */
