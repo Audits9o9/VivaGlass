@@ -1,10 +1,11 @@
+
 :root {
     --space: 5px;
     /*space between different panels, eg. tabs, bookmark bar etc. */
     --borderColor: rgba(255,255,255, 0.2);
     /*color of borders*/
-    --shadowColor: rgba(0,0,0,0.2);
-    --glassTintColorLight: rgba(255, 255, 255, 0.2);
+    --shadowColor: rgba(0,0,0,0.2); 
+    --glassTintColorLight: rgba(255, 255, 255, 0.2); 
     --glassTintColorDark: rgba(70, 70, 70, 0.1);
     --bgColor: rgba(0, 0, 0, 0.05);
     --bgDark: rgba(0, 0, 0, 0.2);

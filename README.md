@@ -1,14 +1,17 @@
 # VivaGlass
 A fork of Vivaldi Air
 
+Made to work with custom background colors, transparency, and background blur:
+<img width="1919" height="1024" alt="image" src="https://github.com/BigXaxa3000/VivaGlass/blob/main/Screenshots/VivaGlass-img-4.gif" />
+
+---
 Screenshots:
+---
 
 <img width="1919" height="1024" alt="image" src="https://github.com/BigXaxa3000/VivaGlass/blob/main/Screenshots/VivaGlass-img-1.jpg" />
 <img width="1919" height="1024" alt="image" src="https://github.com/BigXaxa3000/VivaGlass/blob/main/Screenshots/VivaGlass-img-2.jpg" />
 <img width="1919" height="1024" alt="image" src="https://github.com/BigXaxa3000/VivaGlass/blob/main/Screenshots/VivaGlass-img-3.jpg" />
 
-Made to work with custom background colors, transparency, and background blur:
-<img width="1919" height="1024" alt="image" src="https://github.com/BigXaxa3000/VivaGlass/blob/main/Screenshots/VivaGlass-img-4.gif" />
 
 ---
 Configuration steps:
@@ -18,5 +21,8 @@ Configuration steps:
   3) Type vivaldi://experiments in the URL bar and check Allow CSS modifications
   4) Open Vivaldi Settings
   5) Appearance > CUSTOM UI MODIFICATIONS and select the folder in which you downloaded the CSS.
-  6) Appearance > Status Bar > Hide Status Bar
-  7) Themes > New Theme... and follow the screenshots below:
+  7) Themes > Editor > Colors > Accent from page: Off, Accent on window: On
+  8) Themes > Editor > Settings > Transparent tab bar: On
+
+Hopefully 7 & 8 wont be required to get the transparency in the future.
+     
