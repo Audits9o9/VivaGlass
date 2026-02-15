@@ -39,7 +39,7 @@ FOR EVERY OPAQUE ELEMENT
 .Dashboard-Widgets .dashboard-widget, /*STARTPAGE WIDGETS*/
 .startpage .startpage-navigation,      /*STARTPAGE NAV BAR CONTAINER*/
 #browser:not(.inner, .narrow-tiling) #webpage-stack > .tiled.visible, /*TILED TABS CONTAINER*/
-.mosaic-tile, /*TILED TAB TITLE BAR
+.mosaic-tile, /*TILED TAB TITLE BAR*/
 footer .toolbar-statusbar, /*STATUS BAR*/
 #browser #panels-container.left, #browser #panels-container.right, /*SIDEPANEL*/
 .SpeedDialView-Settings, /*STARTPAGE QUICK SETTINGS*/
@@ -104,6 +104,12 @@ input[type=button]:not(.circular),
 }
 
 /* MAINBAR */
+
+/*displays wierd shadows on tabs if enabled (intended to fix #2): #main{
+    overflow: visible; /*lets shadow on mainbar not get hidden by elements outside of main*/
+
+
+
 #browser.win.address-top .toolbar-mainbar:has(.window-buttongroup.on-mainbar), #browser.linux.address-top .toolbar-mainbar:has(.window-buttongroup.on-mainbar) {
     min-height: calc(42px / var(--uiZoomLevel));
 }
@@ -125,7 +131,9 @@ input[type=button]:not(.circular),
 .mainbar {
     margin-left: var(--space);
     margin-right: var(--space);
+    margin-bottom: var(--space);
     border-radius: var(--radius);
+    border: none;
 }
 
 .SearchField, .UrlBar-AddressField {
@@ -147,6 +155,7 @@ input[type=button]:not(.circular),
 
 .address-top .mainbar {
     border-bottom: none;
+    margin-bottom: 0;
 }
 
 .mainbar button:hover, #browser:not(.tabs-top) .vivaldi:hover, #browser:not(.tabs-top) .vivaldi:focus-visible, .theme-dark#browser.win .window-buttongroup button:hover {
